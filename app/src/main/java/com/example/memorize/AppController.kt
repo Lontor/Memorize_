@@ -12,6 +12,7 @@ import kotlinx.coroutines.withContext
 class AppController() : ViewModel() {
     private var _textString: String = "1"
     val textString get() = _textString
+    val collectionManager: CollectionManager = CollectionManager()
 
     val uiManager: UIManager = UIManager(this)
 
@@ -25,6 +26,17 @@ class AppController() : ViewModel() {
             }
         }
     }
+
+    fun addCard(collectionName: String, cardName: String, cardTranslation: String) {
+        val card: Card = Card(collectionName, cardName, cardTranslation)
+        collectionManager.addCard(card)
+    }
+
+    fun getCollections(){
+        collectionManager.getCollections()
+    }
+
+
     fun init(activity: Activity) {
         uiManager.init(activity)
     }
