@@ -1,5 +1,6 @@
 package com.example.memorize
 
+import CardCollection
 import android.app.Activity
 import android.widget.TextView
 import androidx.core.view.ViewCompat
@@ -28,5 +29,17 @@ class UIManager(
 
     fun setText(text:String) {
         textView.text = text
+    }
+
+    fun drawCardList(cardList: ArrayList<Pair<String, String>>) {
+        //TODO
+    }
+
+    fun drawCollectionList(collections: java.util.ArrayList<CardCollection>) {
+        //TODO
+    }
+
+    fun showCard(card: Card) {
+        //TODO
     }
 }
