@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/collectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collection Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cards: 0"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,19 +1,17 @@
-package com.example.memorize
+package com.example.memorize.implementation.ui.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.memorize.R
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appController: AppController
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        appController = ViewModelProvider(this).get(AppController::class.java)
-        appController.init(this)
+        setContentView(R.layout.activity_main)
     }
 }
